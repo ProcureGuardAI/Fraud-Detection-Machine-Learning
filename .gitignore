@@ -1,1 +1,8 @@
 **/Frad/
+
+# my virtualenv
+**/myenv/
+env/
+
+# Ignore get-pip.py
+get-pip.py
