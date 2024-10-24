@@ -1,17 +1,13 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
 
-# Create your models here.
-
-class User(models.Model):
+class User(AbstractUser):
     full_name = models.CharField(max_length=100)
-    email = models.EmailField()
-    phone_number = models.CharField(max_length=15)
-    password = models.CharField(max_length=100)
-    password2 = models.CharField(max_length=100)
-    role = models.CharField(max_length=100)
-    department = models.CharField(max_length=100)
-    office_location = models.CharField(max_length=100)
-    security_question = models.CharField(max_length=100)
+    phone_number = models.CharField(max_length=15, blank=True, null=True)
+    role = models.CharField(max_length=100, blank=True, null=True)
+    department = models.CharField(max_length=100, blank=True, null=True)
+    office_location = models.CharField(max_length=100, blank=True, null=True)
+    security_question = models.CharField(max_length=100, blank=True, null=True)
     two_fa = models.BooleanField(default=False)
 
     class Meta:
