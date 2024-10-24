@@ -97,19 +97,35 @@ This project is a backend service for a fraud detection machine learning applica
 
 
 #### Transactions
-Endpoint: /api/transactions/
-Method: GET, POST
+- Endpoint: /api/transactions/
+- Method: GET, POST
 
 #### Notifications
-Endpoint: /api/notifications/
-Method: GET, POST
+- Endpoint: /api/notifications/
+- Method: GET, POST
 
 #### Reports
-Endpoint: /api/reports/
-Method: GET, POST
+- Endpoint: /api/reports/
+- Method: GET, POST
 
 ## Docker
 1. Build and start the containers:
 
     ```sh
     sudo docker-compose up -d --build
+
+2. Check running containers:
+
+    ```sh
+    docker ps
+
+3. view logs
+
+    ```sh
+    docker-compose logs
+
+4. Stop containers
+
+    ```sh
+    sudo docker-compose down
+
