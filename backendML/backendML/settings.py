@@ -13,9 +13,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-SECRET_KEY = os.environ.get("SECRET_KEY")
-DEBUG = int(os.environ.get("DEBUG", default=0))
-ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS").split(" ")
+SECRET_KEY = os.getenv("SECRET_KEY", )
+DEBUG = os.getenv("DEBUG", "False").lower() in ("true", "1", "t")
+ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', 'localhost').split(',')
 
 # Application definition
 
@@ -32,8 +32,7 @@ INSTALLED_APPS = [
     'core',
     'notifications',
     'reports',
-    'users',
-    'transactions',
+    'users'
 ]
 
 MIDDLEWARE = [
@@ -72,12 +71,12 @@ WSGI_APPLICATION = 'backendML.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'fraud_db',
-        'USER': 'fraud_user',
-        'PASSWORD': '1234',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mydatabase',
+        'USER': 'myuser',
+        'HOST': 'db',
+        'PASSWORD': 'mypassword',
+        'PORT': 5432
     }
 }
 
