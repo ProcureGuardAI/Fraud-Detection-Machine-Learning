@@ -10,12 +10,14 @@ services:
       - postgres_data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
+    networks:
+      - backend
 
   web:
     build:
       context: .
       dockerfile: Dockerfiles/Dockerfile
-    command: python manage.py runserver 0.0.0.0:8080
+    command: ./wait-for-db.sh db python manage.py runserver 0.0.0.0:8080
     volumes:
       - .:/code
     ports:
