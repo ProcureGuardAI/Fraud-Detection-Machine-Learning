@@ -5,3 +5,9 @@ matplotlib
 seaborn
 jupyter
 Django
+xgboost
+tensorflow
+keras
+openpyxl
+torch
+torchvision
