@@ -1,7 +1,7 @@
 
-# Disease Detection System
+# AI FRAUD DETECTION IN PROCUREMENT
 
-![alt text](Images/Tuberculosis.jpg)
+ 
 
 
 ## Table of Contents
@@ -110,7 +110,7 @@ Given both recall and accuracy metrics on the test set, the BiLSTM model stands 
 
  
 ### Deployment
-Check out our app by clicking on this button [App Here](https://disease-csv-visual.vercel.app/)
+ 
 
 ### Installation 
 To run the application locally, follow the following steps:
@@ -119,18 +119,18 @@ To run the application locally, follow the following steps:
 
 **https:**
 ```
-git clone https://github.com/AmaniWanene/Disease-Outbreak-Tracking.git
+https://github.com/ProcureGuardAI/Fraud-Detection-Machine-Learning.git
 ```
 **ssh:**
 ```
-git clone git@github.com:AmaniWanene/Disease-Outbreak-Tracking.git
+git@github.com:ProcureGuardAI/Fraud-Detection-Machine-Learning.git
 ```
 **Navigate to the project directory**
 
 ```
-cd Disease-Outbreak-Tracking.git
+cd Fraud-Detection-Machine-Learning.git
 ```
-**Create a virtual environment**
+<!-- **Create a virtual environment**
 
 ```
 python -m venv vader_env
@@ -149,7 +149,7 @@ source vader_env/bin/activate
 ```
 pip install -r requirements.txt
 ```
- 
+  -->
 
 ## 🔗 Libraries and Tools Used
 ![numpy](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
