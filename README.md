@@ -130,26 +130,26 @@ git@github.com:ProcureGuardAI/Fraud-Detection-Machine-Learning.git
 ```
 cd Fraud-Detection-Machine-Learning.git
 ```
-<!-- **Create a virtual environment**
+**Create a virtual environment**
 
 ```
-python -m venv vader_env
+python -m venv procure
 ```
 **Activate the virtual environment**
 
 **Windows:**
 ```
-vader_env\Scripts\activate
+cd procure\Scripts
 ```
 **MacOS/Linux:**
 ```
-source vader_env/bin/activate
+source activate
 ```
 **Install dependencies**
 ```
 pip install -r requirements.txt
 ```
-  -->
+ 
 
 ## 🔗 Libraries and Tools Used
 ![numpy](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
@@ -169,6 +169,7 @@ MIT License
 - [Ivy Atieng](https://github.com/Atieng) 
 - [Clency Christine](https://github.com/clencyc)
 - [James Njoroge](https://github.com/devjamesnjoroge)
+- [Movirne Odhiambo]()
  
 
   
