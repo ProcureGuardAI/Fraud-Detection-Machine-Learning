@@ -1,9 +1,7 @@
 
 # AI FRAUD DETECTION IN PROCUREMENT
-
+![alt text](images/istockphoto-888421386-612x612.jpg)
  
-
-
 ## Table of Contents
 
 1. [Business Understanding](#business-understanding)
